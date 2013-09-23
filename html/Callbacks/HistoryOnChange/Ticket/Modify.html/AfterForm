@@ -1,0 +1,11 @@
+<& /Ticket/Elements/DelayShowHistory,
+    %$ARGSRef,
+    Ticket => $Ticket,
+    ShowActions => 0,
+    HistoryOnChange => 1,
+&>
+
+<%ARGS>
+$ARGSRef
+$Ticket
+</%ARGS>
