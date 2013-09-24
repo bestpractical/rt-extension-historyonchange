@@ -1,15 +1,3 @@
-diff --git a/share/html/Helpers/TicketHistory b/share/html/Helpers/TicketHistory
-index d47a4ca..709dd48 100644
---- a/share/html/Helpers/TicketHistory
-+++ b/share/html/Helpers/TicketHistory
-@@ -56,6 +56,7 @@ my $attachments = $TicketObj->Attachments;
- my $attachment_content = $TicketObj->TextAttachments;
- </%INIT>
- <& /Elements/ShowHistory,
-+    %ARGS,
-     Object => $TicketObj,
-     ShowHeaders => $ARGS{'ShowHeaders'},
-     Attachments => $attachments,
 diff --git a/share/html/Ticket/Modify.html b/share/html/Ticket/Modify.html
 index e9ef761..8c7e3c1 100644
 --- a/share/html/Ticket/Modify.html
