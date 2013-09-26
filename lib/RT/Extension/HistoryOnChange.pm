@@ -20,6 +20,10 @@ RT-Extension-HistoryOnChange - Show history on ticket modify page
 
 May need root permissions
 
+=item apply etc/history_on_change.diff
+
+patch /path/to/rt/share/html/Ticket/Modify.html < etc/history_on_change.diff
+
 =item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
 
 Add this line:
@@ -28,10 +32,6 @@ Add this line:
 
 or add C<RT::Extension::HistoryOnChange> to your existing C<@Plugins> line.
 
-You can also customize transaction types to show, e.g.
-
-    Set(@HistoryOnChangeTransactionTypes, 'Create', 'Correspond');
-
 =item Clear your mason cache
 
     rm -rf /opt/rt4/var/mason_data/obj
@@ -39,6 +39,23 @@ You can also customize transaction types to show, e.g.
 =item Restart your webserver
 
 =back
+
+=head1 CONFIGURATION
+
+=head2 C<@HistoryOnChangeTransactionTypes>
+
+By default, all history will be shown. You can limit the types of history
+transactions displayed with this configuration option:
+
+    Set(@HistoryOnChangeTransactionTypes, 'Create', 'Correspond');
+
+Valid values are transaction types from the RT Transactions table. For
+example, Create, Correspond, and Comment would get you all messages on the
+ticket, but omit other transactions like added links (AddLink), status changes
+(Status), etc.
+
+This option changes only the history on the Modify (Basics) page. The main
+ticket display history will continue to show the full history.
 
 =head1 AUTHOR
 
