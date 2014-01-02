@@ -8,6 +8,15 @@ our $VERSION = '0.01';
 
 RT-Extension-HistoryOnChange - Show history on ticket modify page
 
+=head1 DESCRIPTION
+
+Displays ticket history at the bottom of the the Basics page when you modify
+values on a ticket.
+
+=head1 RT VERSIONS
+
+Works with RT 4.2.
+
 =head1 INSTALLATION 
 
 =over
@@ -61,7 +70,6 @@ ticket display history will continue to show the full history.
 
 sunnavy <sunnavy@bestpractical.com>
 
-
 =head1 BUGS
 
 All bugs should be reported via email to
@@ -72,7 +80,7 @@ L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-Hist
 
 =head1 LICENSE AND COPYRIGHT
 
-This software is Copyright 2013 Best Practical Solutions, LLC.
+This software is Copyright 2014 Best Practical Solutions, LLC.
 
 This is free software, licensed under:
 
