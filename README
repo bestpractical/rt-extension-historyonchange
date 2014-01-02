@@ -14,9 +14,11 @@ INSTALLATION
     "make install"
         May need root permissions
 
-    apply etc/history_on_change.diff
+    For RT 4.2.1, apply etc/history_on_change.diff
         patch /path/to/rt/share/html/Ticket/Modify.html <
         etc/history_on_change.diff
+
+        Not needed for RT 4.2.2 and later.
 
     Edit your /opt/rt4/etc/RT_SiteConfig.pm
         Add this line:

@@ -29,9 +29,11 @@ Works with RT 4.2.
 
 May need root permissions
 
-=item apply etc/history_on_change.diff
+=item For RT 4.2.1, apply etc/history_on_change.diff
 
 patch /path/to/rt/share/html/Ticket/Modify.html < etc/history_on_change.diff
+
+Not needed for RT 4.2.2 and later.
 
 =item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
 
