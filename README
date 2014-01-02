@@ -26,7 +26,9 @@ INSTALLATION
             Set(@Plugins, qw(RT::Extension::HistoryOnChange));
 
         or add "RT::Extension::HistoryOnChange" to your existing @Plugins
-        line.
+        line. Starting with RT 4.2 you can also use:
+
+            Plugin( "RT::Extension::HistoryOnChange" );
 
     Clear your mason cache
             rm -rf /opt/rt4/var/mason_data/obj

@@ -42,6 +42,9 @@ Add this line:
     Set(@Plugins, qw(RT::Extension::HistoryOnChange));
 
 or add C<RT::Extension::HistoryOnChange> to your existing C<@Plugins> line.
+Starting with RT 4.2 you can also use:
+
+    Plugin( "RT::Extension::HistoryOnChange" );
 
 =item Clear your mason cache
 
