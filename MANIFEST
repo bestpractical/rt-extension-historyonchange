@@ -1,3 +1,4 @@
+Changes
 etc/history_on_change.diff
 html/Callbacks/HistoryOnChange/Elements/ShowHistory/SkipTransaction
 html/Callbacks/HistoryOnChange/Ticket/Modify.html/AfterForm
