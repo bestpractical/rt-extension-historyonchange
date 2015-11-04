@@ -15,7 +15,7 @@ values on a ticket.
 
 =head1 RT VERSIONS
 
-Works with RT 4.2.
+Works with RT 4.2 and later versions.
 
 =head1 INSTALLATION 
 

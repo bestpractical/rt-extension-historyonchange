@@ -6,7 +6,7 @@ DESCRIPTION
     modify values on a ticket.
 
 RT VERSIONS
-    Works with RT 4.2.
+    Works with RT 4.2 and later versions.
 
 INSTALLATION
     "perl Makefile.PL"
